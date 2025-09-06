@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body,#root { height: 100%; }
+body { @apply bg-slate-50 text-slate-900; font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+.track { background: linear-gradient(180deg,#e6eef8,#dbeefc); border-radius: 8px; height: 120px; position: relative; overflow: hidden; }
+.train { width: 110px; height: 48px; position: absolute; top: 30px; left: -140px; }
+@keyframes slideRight {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(120%); }
+}
+.train-anim { animation: slideRight 8s linear infinite; }
